@@ -24,23 +24,15 @@ ul {
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
   font-family: 'Roboto', sans-sefif;
   font-size: 14px;
   color: var(--primary-text-color);
-}
-.header {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border: 1px solid var(--border-color);
-}
-.header>a{
-  display: block;
 }
 .container {
   margin-left: auto;
@@ -50,9 +42,19 @@ body {
   padding-right: 15px;
 }
 
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid var(--border-color);
+}
+
 .header .container {
   display: flex;
   align-items: center;
+}
+
+.header > a {
+  display: block;
 }
 
 .main-nav {
@@ -61,12 +63,25 @@ body {
   gap: 30px;
   margin-right: 340px;
 }
+
+.navigation,
+.contacts,
+.address-list,
+.features-list,
+.gallery-list,
+.team-list,
+.filter-list,
+.filter-cards {
+  list-style: none;
+}
 .navigation {
   display: flex;
   gap: 50px;
 }
-.logo {
-  margin-right: 90px;
+.navigation,
+.contacts {
+  font-weight: 500;
+  line-height: 1.14;
 }
 .logo {
   text-decoration: none;
@@ -75,7 +90,9 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  margin-right: 90px;
 }
+
 .logo-accent {
   color: var(--accent-color);
 }
@@ -87,22 +104,6 @@ body {
 
 .contacts > li {
   display: flex;
-}
-.navigation,
-.contacts,
-.address-list,
-.features-list,
-.gallery-list,
-.team-list,
-.filter-list,
-.filter-cards {
-  list-style: none;
-}
-
-.navigation,
-.contacts {
-  font-weight: 500;
-  line-height: 1.14;
 }
 
 .navigation-item {
@@ -129,9 +130,7 @@ body {
   padding-bottom: 200px;
   text-align: center;
 }
-.gallery .container {
-  justify-content: center;
-}
+
 .hero-title {
   display: flex;
   margin: 0px auto 30px auto;
@@ -214,7 +213,9 @@ body {
 .gallery {
   padding-bottom: 94px;
 }
-
+.gallery .container {
+  justify-content: center;
+}
 .gallery-list {
   display: flex;
   align-items: center;
@@ -341,8 +342,8 @@ body {
 .filter-text-container {
   padding: 20px 24px;
   background: var(--white);
-border: 1px solid var(--border-secondary-color);
-border-top: none;
+  border: 1px solid var(--border-secondary-color);
+  border-top: none;
 }
 
 .filter-cards-title {
