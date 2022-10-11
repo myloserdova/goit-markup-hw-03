@@ -43,9 +43,7 @@ body {
 }
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header .container {
@@ -91,6 +89,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   margin-right: 90px;
+  padding: 24px 0;
 }
 
 .logo-accent {
@@ -109,12 +108,21 @@ body {
 .navigation-item {
   text-decoration: none;
   color: var(--secondary-text-color);
+  padding: 32px 0;
+  display: block;
 }
+.navigation-item.current{
+color: var(--accent-color);
+}
+
 .contacts-item {
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
+  padding: 32px 0;
+  display: flex;
 }
+
 .contacts-item:hover,
 .navigation-item:hover,
 .contacts-item:focus,
@@ -206,7 +214,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   width: fit-content;
-  display: flex;
   margin: 0px auto 50px auto;
 }
 
